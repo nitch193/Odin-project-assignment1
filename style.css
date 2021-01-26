@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav a {
+  margin: 1% 1% 1% 1%;
+}
+.user {
+  border-radius: 50%;
+}
+#body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  width: 485px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #bbbec2;
+  border-radius: 25px;
+  height: 45px;
+}
+.search-box input {
+  width: 90%;
+  height: 90%;
+  border: none;
+  outline: none;
+  padding: 1%;
+  font-size: large;
+}
+.search-box img {
+  width: 20px;
+  height: 20px;
+  margin: 2%;
+}
+.search-box:hover {
+  -webkit-box-shadow: 2px 2px 2px 2px #bbbec2; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 2px 2px 2px 2px #bbbec2; /* Firefox 3.5 - 3.6 */
+  box-shadow: 2px 2px 2px 2px #bbbec2;
+}
+.search-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+.search-buttons button {
+  background-color: #f8f9fa;
+  margin: 2%;
+  width: 155px;
+  height: 36px;
+  border: none;
+  outline: none;
+}
+.search-buttons button:hover {
+  box-shadow: 1px 1px 1px 1px #e0e3e6;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: black;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.footer-child1 {
+  border-bottom: solid 2px #bbbec2;
+  height: 40px;
+  padding: 6px 0px 6px 15px;
+}
+.footer-child2 {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 40px;
+  padding: 6px 0 6px 15px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .footer-child2 {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-child2 div {
+    margin: 5px 0 5px 0;
+  }
+  .footer-child2 div a {
+    margin: 15px 5px 15px 5px;
+  }
+}
+.footer-child2 div {
+  text-align: center;
+}
+.footer-child2 a {
+  margin: 5px 5px 5px 5px;
+}

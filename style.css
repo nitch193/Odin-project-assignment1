@@ -13,6 +13,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  margin-bottom: 35px;
 }
 .nav a {
   margin: 1% 1% 1% 1%;
@@ -92,6 +93,10 @@ a:visited {
   height: 40px;
   padding: 6px 0px 6px 15px;
 }
+.footer-child1 span {
+  display: inline-block;
+  margin-top: 5px;
+}
 .footer-child2 {
   display: flex;
   flex-direction: row-reverse;
@@ -116,7 +121,11 @@ a:visited {
 }
 .footer-child2 div {
   text-align: center;
+  margin-left: -5px;
 }
 .footer-child2 a {
   margin: 5px 5px 5px 5px;
+}
+.footer-child2:last-child {
+  margin-right: 15px;
 }
